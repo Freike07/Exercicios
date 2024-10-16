@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body, a {
+    margin: 0;
+}
+
+#nav {
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    background-color: #354985;
+    justify-content: center;
+
+}
+
+#classNav {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+
+.list-service {
+    display: block ruby;    
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+.list-service a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------ */
+
+#cabecario {
+width: 100%;
+display: flex;
+align-items: center;                                                
+padding: 10px;
+background-color: rgb(173, 173, 173);
+
+
+}
+#Base-cabecario {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+#buttons {
+   display: flex;
+   gap: 10px;
+   margin: 0;
+    
+
+    .link{
+        text-decoration: none;
+        color: black;
+        padding: 4px;
+    }
+   
+}
+.link:hover {
+    
+    border: 1px solid #000000;
+    background-color: #354985;
+    border-radius: 1px;
+}
+
+
+
+
+
+/*-------------------------*/
+
+.secao1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+}
+
+@media (max-width: 768px) {
+    #nav ul {
+        display: none;
+    }
+
+    #Base-cabecario {
+        
+        flex-direction: row-reverse;
+        
+
+    }
+
+    #buttons {
+        display: none;
+    }
+     
+    .menu-toggle {
+        display:flex;
+        
+    }
+}
+
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
